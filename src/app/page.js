@@ -3,16 +3,17 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/photo";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
-  <section className="bg-gray-900 text-white">
+  <section className=" ">
     <div className="container mx-auto h-full ">
-      <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-12 lg:pb-24">
+      <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
       
                             {/* text */}
 
-        <div className="text-center lg:text-left order-2 lg:order-none">
+        <div className="text-center lg:text-left order-2 xl:order-none">
         
           <h1 className="text-3xl">
             Hello I'm  <br /> <span className="text-green-600"> Aklima Akter</span>
@@ -35,11 +36,12 @@ export default function Home() {
     </div>
         
       </div>
-      <div className="order-1 lg:order-none mb-8 lg:mb-0">
+      <div className="order-1 xl:order-none mb-8 xl:mb-0">
         <Photo />
       </div>
       </div>
     </div>
+    <Stats/>
   </section>
   );
 }
