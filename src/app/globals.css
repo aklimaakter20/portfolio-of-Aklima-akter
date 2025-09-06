@@ -1,11 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* @layer base {
-  body {
-    @apply bg-primary text-white
-  }
-} */
+
 
 .text-outline {
   -webkit-text-stroke: 1px #364153;

@@ -10,6 +10,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent,TooltipProvider,TooltipTrigger } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -63,7 +64,7 @@ const Work = () => {
     animate={{opacity: 1,
       transition: {delay: 2.4, duration: 0.4, ease:"easeIn"}
     }}
-    className="min-h-[80vh] flex flex-col justify-center py-12 mx-5">
+    className="min-h-[80vh] flex flex-col justify-center py-12 mx-5 ">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
            <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
@@ -141,6 +142,9 @@ const Work = () => {
                   </SwiperSlide>
                 )
               })}
+              {/* slider button */}
+              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[50%] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+              btnStyles="bg-green-600 hover:bg-green-800 text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all duration-500"/>
             </Swiper>
             </div>
         </div>
@@ -149,4 +153,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Work;
