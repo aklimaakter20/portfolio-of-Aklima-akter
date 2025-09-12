@@ -64,7 +64,7 @@ const Work = () => {
     animate={{opacity: 1,
       transition: {delay: 2.4, duration: 0.4, ease:"easeIn"}
     }}
-    className="min-h-[80vh] flex flex-col justify-center py-12 mx-5 ">
+    className="min-h-[80vh] flex flex-col justify-center py-12 ">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
            <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
@@ -73,9 +73,9 @@ const Work = () => {
                 {project.num}
               </div>
               {/* project-category */}
-              <h2 className="text-[32px] font-bold leading-none text-green-600 group-hover:text-gray-600  transition-all duration-500 capitalize">{project.category} project</h2>
+              <h2 className="text-[32px] font-bold leading-none text-green-600 group-hover:text-[#1C1B22] transition-all duration-500 capitalize">{project.category} project</h2>
                 {/* project-description */}
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-[#1C1B22]">{project.description}</p>
                 {/* stack */}
                 <ul className="flex gap-4">
                   {

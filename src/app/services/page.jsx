@@ -50,13 +50,13 @@ const page = () => {
                       <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">{item.num}</div>
                        
                       <Link href={item.href}
-                      className="w-[50px] h-[50px] rounded-full bg-gray-700  group-hover:bg-green-600 transition-all duration-500 flex justify-center items-center text-white hover:-rotate-45">
+                      className="w-[50px] h-[50px] rounded-full text-[#1C1B22] group-hover:bg-green-600 group-hover:text-white transition-all duration-500 flex justify-center items-center hover:-rotate-45">
                          <BsArrowDownRight/>
                       </Link>
                     </div>
-                    <h2 className="text-[42px] font-bold leading-none text-gray-700 group-hover:text-green-600 transition-all duration-500">{item.title}</h2>
-                    <p className="text-gray-700">{item.Description}</p>
-                    <div className="border-b border-gray-700 w-full"></div>
+                    <h2 className="text-[42px] font-bold leading-none text-[#1C1B22] group-hover:text-green-600 transition-all duration-500">{item.title}</h2>
+                    <p className="text-[#1C1B22]">{item.Description}</p>
+                    <div className="border-b text-[#1C1B22] w-full"></div>
                   </div>
                 )
               })

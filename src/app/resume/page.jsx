@@ -150,7 +150,7 @@ const about= {
     animate={{opacity:1,
       transition: {delay:2.4, duration:0.4, ease: "easeIn"},
     }}
-    className="min-h-[80vh] flex items-center justify-center py-12 xl:py-16"
+    className="min-h-[80vh] flex items-center justify-center py-12"
     >
       <div className="container mx-auto">
         <Tabs 
@@ -164,23 +164,23 @@ const about= {
           </TabsList>
           <div className="min-h-[70vh] w-full">
                       {/* experience part */}
-            <TabsContent value="experience" className="w-full h-full">
+            <TabsContent value="experience" className="w-full h-full ">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-gray-600 xl:mx-0">
+                <h3 className="text-4xl font-bold text-[#1C1B22]">{experience.title}</h3>
+                <p className="max-w-[600px] text-[#1C1B22] xl:mx-0 mx-auto">
                   {experience.description}</p>
 
 
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mx-5">
+                <ScrollArea className="h-[400px] ">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
                     {experience.items.map((item,index)=>{
                       return (
                       <li key={index}
-                      className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 text-white">
-                        <span className="text-green-600">{item.duration}</span>
+                      className="bg-[#232329] hover:bg-green-600 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 text-white transition-all duration-500">
+                        <span className="text-white">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-green-600"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-green-600]"></span>
                           <p>{item.company}</p>
                         </div>
                       </li>
@@ -194,9 +194,9 @@ const about= {
                       {/* education part */}
               <TabsContent value="education" className="w-full h-full">
                     <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-gray-600 xl:mx-0">
-                  {education.description}</p>
+                <h3 className="text-4xl font-bold text-[#1C1B22]">{education.title}</h3>
+                <p className="max-w-[600px] text-[#1C1B22] xl:mx-0 mx-auto">{education.description}</p>
+                  
 
 
                 <ScrollArea className="h-[400px]">
@@ -204,8 +204,8 @@ const about= {
                     {education.items.map((item,index)=>{
                       return (
                       <li key={index}
-                      className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 text-white">
-                        <span className="text-green-600">{item.duration}</span>
+                      className="bg-[#232329] hover:bg-green-600 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 text-white">
+                        <span className="text-white">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
                           <span className="w-[6px] h-[6px] rounded-full bg-green-600"></span>
@@ -223,8 +223,8 @@ const about= {
               <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                 <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-gray-900 mx-auto xl:mx-0">{skills.description}</p>
+                 <h3 className="text-4xl font-bold text-white">{skills.title}</h3>
+                <p className="max-w-[600px] text-white mx-auto xl:mx-0">{skills.description}</p>
                </div>
               </div>
               <ul className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4  gap-4 xl:gap-[30px] mt-10">
@@ -233,8 +233,8 @@ const about= {
                     <li key={index}>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-5xl text-white group-hover:text-green-600 transition-all duration-300">
+                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] hover:bg-green-600 rounded-xl flex justify-center items-center group transition-all duration-500">
+                            <div className="text-5xl text-white transition-all duration-500">
                               {item.icon}
                             </div>
                           </TooltipTrigger>

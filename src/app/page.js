@@ -13,7 +13,7 @@ export default function Home() {
       
                             {/* text */}
 
-        <div className="text-center lg:text-left order-2 xl:order-none">
+        <div className="text-center xl:text-left order-2 xl:order-none">
         
           <h1 className="text-3xl">
             Hello I'm  <br /> <span className="text-green-600"> Aklima Akter</span>
@@ -26,12 +26,12 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center gap-8">
            <Button variant="outline"
          size="lg"
-         className= "uppercase flex items-center gap-2">
-          <span >Download CV</span>
+         className= "uppercase flex items-center gap-2 bg-transparent outline text-green-800  outline-green-800 hover:outline-green-500 hover:text-green-600 transition-all duration-500">
+          <span className="">Download CV</span>
           <FiDownload className="text-xl"/>
          </Button>
          <div className="mb-8 lg:mb-0"> 
-          <Social containerStyles= "flex gap-6" iconStyles="w-9 h-9 border border-green-600 rounded-full flex justify-center items-center text-green-600 text-base hover:bg-red-500 hover:text-black hover:transition-all duration-500" />
+          <Social containerStyles= "flex gap-6" iconStyles="w-9 h-9 border border-green-600 rounded-full flex justify-center items-center text-green-800 text-base hover:text-green-600 hover:transition-all duration-500" />
          </div>
     </div>
         

@@ -5,7 +5,9 @@
 
 .text-outline {
   -webkit-text-stroke: 1px #364153;
-}
+};
 .text-outline-hover {
   -webkit-text-stroke: 1px #00ff99;
-}
+};
+
+
